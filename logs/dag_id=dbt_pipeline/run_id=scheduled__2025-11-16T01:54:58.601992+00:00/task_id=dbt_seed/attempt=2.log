@@ -1,0 +1,38 @@
+{"timestamp":"2025-11-16T05:37:03.881151Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-16T05:37:03.885329Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dbt_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-16T05:37:06.130259Z","level":"info","event":"Executing dbt command: seed --profiles-dir /opt/airflow/dags/dbt_trino --project-dir /opt/airflow/dags/dbt_trino --full-refresh","logger":"airflow.task.operators.custom_operator.dbt_operator.DbtCoreOperator","filename":"dbt_operator.py","lineno":47}
+{"timestamp":"2025-11-16T05:37:06.928124Z","level":"info","event":"\u001b[0m05:37:06  Running with dbt=1.10.10","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:07.217379Z","level":"info","event":"keyring module not found. OAuth2 token will not be stored in keyring.","logger":"trino.auth","filename":"auth.py","lineno":361}
+{"timestamp":"2025-11-16T05:37:07.220924Z","level":"info","event":"keyring module not found. OAuth2 token will not be stored in keyring.","logger":"trino.auth","filename":"auth.py","lineno":361}
+{"timestamp":"2025-11-16T05:37:07.502534Z","level":"info","event":"\u001b[0m05:37:07  Registered adapter: trino=1.9.3","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:07.918827Z","level":"info","event":"\u001b[0m05:37:07  Found 8 models, 5 seeds, 5 data tests, 456 macros","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:07.921311Z","level":"info","event":"\u001b[0m05:37:07","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:07.921689Z","level":"info","event":"\u001b[0m05:37:07  Concurrency: 1 threads (target='trino_output')","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:07.921927Z","level":"info","event":"\u001b[0m05:37:07","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:07.957409Z","level":"info","event":"\u001b[0m05:37:07  [\u001b[33mWARNING\u001b[0m]: SSL certificate validation is disabled by default. It is legacy behavior which will be changed in future releases. It is strongly advised to enable `require_certificate_validation` flag or explicitly set `cert` configuration to `True` for security reasons. You may receive an error after that if your SSL setup is incorrect.","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:07.957585Z","level":"info","event":"You may opt into the new behavior sooner by setting `flags.require_certificate_validation` to `True` in `dbt_project.yml`.","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:07.957668Z","level":"info","event":"Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:11.593514Z","level":"info","event":"\u001b[0m05:37:11  1 of 5 START seed file landing.product_categories .............................. [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:12.676971Z","level":"info","event":"\u001b[0m05:37:12  1 of 5 OK loaded seed file landing.product_categories .......................... [\u001b[32mCREATE 4\u001b[0m in 1.08s]","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:12.678445Z","level":"info","event":"\u001b[0m05:37:12  2 of 5 START seed file landing.product_subcategories ........................... [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:13.597664Z","level":"info","event":"\u001b[0m05:37:13  2 of 5 OK loaded seed file landing.product_subcategories ....................... [\u001b[32mCREATE 37\u001b[0m in 0.92s]","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:13.601627Z","level":"info","event":"\u001b[0m05:37:13  3 of 5 START seed file landing.products ........................................ [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:17.706697Z","level":"info","event":"\u001b[0m05:37:17  3 of 5 OK loaded seed file landing.products .................................... [\u001b[32mCREATE 293\u001b[0m in 4.10s]","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:17.808682Z","level":"info","event":"\u001b[0m05:37:17  4 of 5 START seed file landing.sales ........................................... [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:20.406240Z","level":"info","event":"\u001b[0m05:37:20  4 of 5 OK loaded seed file landing.sales ....................................... [\u001b[32mCREATE 843\u001b[0m in 2.67s]","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:20.409546Z","level":"info","event":"\u001b[0m05:37:20  5 of 5 START seed file landing.territories ..................................... [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:20.986111Z","level":"info","event":"\u001b[0m05:37:20  5 of 5 OK loaded seed file landing.territories ................................. [\u001b[32mCREATE 10\u001b[0m in 0.58s]","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:20.994685Z","level":"info","event":"\u001b[0m05:37:20","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:20.994891Z","level":"info","event":"\u001b[0m05:37:20  Finished running 5 seeds in 0 hours 0 minutes and 13.07 seconds (13.07s).","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:21.030336Z","level":"info","event":"\u001b[0m05:37:21","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:21.030882Z","level":"info","event":"\u001b[0m05:37:21  \u001b[32mCompleted successfully\u001b[0m","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:21.031172Z","level":"info","event":"\u001b[0m05:37:21","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:21.031581Z","level":"info","event":"\u001b[0m05:37:21  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:22.584147Z","level":"info","event":"dbt command executed successfully.","logger":"airflow.task.operators.custom_operator.dbt_operator.DbtCoreOperator","filename":"dbt_operator.py","lineno":51}
+{"timestamp":"2025-11-16T05:37:22.588058Z","level":"info","event":"product_categories: success","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:22.588142Z","level":"info","event":"product_subcategories: success","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:22.588237Z","level":"info","event":"products: success","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:22.588304Z","level":"info","event":"sales: success","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:22.588371Z","level":"info","event":"territories: success","logger":"task.stdout"}
+{"timestamp":"2025-11-16T05:37:22.698616Z","level":"error","event":"/usr/python/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 2 leaked semaphore objects to clean up at shutdown","logger":"task.stderr"}
+{"timestamp":"2025-11-16T05:37:22.698814Z","level":"error","event":"  warnings.warn('resource_tracker: There appear to be %d '","logger":"task.stderr"}

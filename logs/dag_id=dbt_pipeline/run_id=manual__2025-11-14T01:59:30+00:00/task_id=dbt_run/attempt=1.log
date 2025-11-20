@@ -1,0 +1,47 @@
+{"timestamp":"2025-11-14T01:59:45.778430Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-14T01:59:45.779476Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dbt_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-14T01:59:46.949394Z","level":"info","event":"Executing dbt command: run --profiles-dir /opt/airflow/dags/dbt_trino --project-dir /opt/airflow/dags/dbt_trino","logger":"airflow.task.operators.custom_operator.dbt_operator.DbtCoreOperator","filename":"dbt_operator.py","lineno":47}
+{"timestamp":"2025-11-14T01:59:47.017746Z","level":"info","event":"\u001b[0m01:59:47  Running with dbt=1.10.10","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:47.049658Z","level":"info","event":"keyring module not found. OAuth2 token will not be stored in keyring.","logger":"trino.auth","filename":"auth.py","lineno":361}
+{"timestamp":"2025-11-14T01:59:47.051504Z","level":"info","event":"keyring module not found. OAuth2 token will not be stored in keyring.","logger":"trino.auth","filename":"auth.py","lineno":361}
+{"timestamp":"2025-11-14T01:59:47.312442Z","level":"info","event":"\u001b[0m01:59:47  Registered adapter: trino=1.9.3","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:47.721514Z","level":"info","event":"\u001b[0m01:59:47  Found 8 models, 5 seeds, 5 data tests, 456 macros","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:47.722911Z","level":"info","event":"\u001b[0m01:59:47","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:47.723240Z","level":"info","event":"\u001b[0m01:59:47  Concurrency: 1 threads (target='trino_output')","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:47.723488Z","level":"info","event":"\u001b[0m01:59:47","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:47.749783Z","level":"info","event":"\u001b[0m01:59:47  [\u001b[33mWARNING\u001b[0m]: SSL certificate validation is disabled by default. It is legacy behavior which will be changed in future releases. It is strongly advised to enable `require_certificate_validation` flag or explicitly set `cert` configuration to `True` for security reasons. You may receive an error after that if your SSL setup is incorrect.","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:47.749896Z","level":"info","event":"You may opt into the new behavior sooner by setting `flags.require_certificate_validation` to `True` in `dbt_project.yml`.","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:47.750233Z","level":"info","event":"Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:48.649139Z","level":"info","event":"\u001b[0m01:59:48  1 of 8 START sql table model staging.stg_product_categories .................... [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:49.746646Z","level":"info","event":"\u001b[0m01:59:49  1 of 8 OK created sql table model staging.stg_product_categories ............... [\u001b[32mCREATE TABLE (4 rows)\u001b[0m in 1.08s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:49.747751Z","level":"info","event":"\u001b[0m01:59:49  2 of 8 START sql table model staging.stg_product_subcategories ................. [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:50.312563Z","level":"info","event":"\u001b[0m01:59:50  2 of 8 OK created sql table model staging.stg_product_subcategories ............ [\u001b[32mCREATE TABLE (37 rows)\u001b[0m in 0.56s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:50.312936Z","level":"info","event":"\u001b[0m01:59:50  3 of 8 START sql table model staging.stg_products .............................. [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:51.025421Z","level":"info","event":"\u001b[0m01:59:51  3 of 8 OK created sql table model staging.stg_products ......................... [\u001b[32mCREATE TABLE (293 rows)\u001b[0m in 0.71s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:51.048063Z","level":"info","event":"\u001b[0m01:59:51  4 of 8 START sql table model staging.stg_sales ................................. [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:51.538128Z","level":"info","event":"\u001b[0m01:59:51  4 of 8 OK created sql table model staging.stg_sales ............................ [\u001b[32mCREATE TABLE (843 rows)\u001b[0m in 0.51s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:51.539085Z","level":"info","event":"\u001b[0m01:59:51  5 of 8 START sql table model staging.stg_territories ........................... [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:51.835299Z","level":"info","event":"\u001b[0m01:59:51  5 of 8 OK created sql table model staging.stg_territories ...................... [\u001b[32mCREATE TABLE (10 rows)\u001b[0m in 0.30s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:51.836373Z","level":"info","event":"\u001b[0m01:59:51  6 of 8 START sql table model curated.dim_product ............................... [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:52.409514Z","level":"info","event":"\u001b[0m01:59:52  6 of 8 OK created sql table model curated.dim_product .......................... [\u001b[32mCREATE TABLE (293 rows)\u001b[0m in 0.57s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:52.412113Z","level":"info","event":"\u001b[0m01:59:52  7 of 8 START sql table model curated.dim_country ............................... [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:53.168733Z","level":"info","event":"\u001b[0m01:59:53  7 of 8 OK created sql table model curated.dim_country .......................... [\u001b[32mCREATE TABLE (6 rows)\u001b[0m in 0.75s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:53.176413Z","level":"info","event":"\u001b[0m01:59:53  8 of 8 START sql table model curated.fact_sale ................................. [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:54.504830Z","level":"info","event":"\u001b[0m01:59:54  8 of 8 OK created sql table model curated.fact_sale ............................ [\u001b[32mCREATE TABLE (843 rows)\u001b[0m in 1.33s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:54.514163Z","level":"info","event":"\u001b[0m01:59:54","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:54.515673Z","level":"info","event":"\u001b[0m01:59:54  Finished running 8 table models in 0 hours 0 minutes and 6.79 seconds (6.79s).","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:54.595218Z","level":"info","event":"\u001b[0m01:59:54","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:54.597415Z","level":"info","event":"\u001b[0m01:59:54  \u001b[32mCompleted successfully\u001b[0m","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:54.597524Z","level":"info","event":"\u001b[0m01:59:54","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:54.597591Z","level":"info","event":"\u001b[0m01:59:54  Done. PASS=8 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=8","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:55.943960Z","level":"info","event":"dbt command executed successfully.","logger":"airflow.task.operators.custom_operator.dbt_operator.DbtCoreOperator","filename":"dbt_operator.py","lineno":51}
+{"timestamp":"2025-11-14T01:59:55.946287Z","level":"info","event":"stg_product_categories: success","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:55.946673Z","level":"info","event":"stg_product_subcategories: success","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:55.946839Z","level":"info","event":"stg_products: success","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:55.946940Z","level":"info","event":"stg_sales: success","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:55.947008Z","level":"info","event":"stg_territories: success","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:55.947066Z","level":"info","event":"dim_product: success","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:55.947164Z","level":"info","event":"dim_country: success","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:55.947283Z","level":"info","event":"fact_sale: success","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:59:56.055422Z","level":"error","event":"/usr/python/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 2 leaked semaphore objects to clean up at shutdown","logger":"task.stderr"}
+{"timestamp":"2025-11-14T01:59:56.055639Z","level":"error","event":"  warnings.warn('resource_tracker: There appear to be %d '","logger":"task.stderr"}

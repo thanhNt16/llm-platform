@@ -1,0 +1,66 @@
+{"timestamp":"2025-11-14T01:55:40.580457Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-14T01:55:40.581055Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dbt_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-14T01:55:41.753950Z","level":"info","event":"Executing dbt command: run --profiles-dir /opt/airflow/dags/dbt_trino --project-dir /opt/airflow/dags/dbt_trino","logger":"airflow.task.operators.custom_operator.dbt_operator.DbtCoreOperator","filename":"dbt_operator.py","lineno":47}
+{"timestamp":"2025-11-14T01:55:41.839411Z","level":"info","event":"\u001b[0m01:55:41  Running with dbt=1.10.10","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:41.877902Z","level":"info","event":"keyring module not found. OAuth2 token will not be stored in keyring.","logger":"trino.auth","filename":"auth.py","lineno":361}
+{"timestamp":"2025-11-14T01:55:41.880699Z","level":"info","event":"keyring module not found. OAuth2 token will not be stored in keyring.","logger":"trino.auth","filename":"auth.py","lineno":361}
+{"timestamp":"2025-11-14T01:55:42.230294Z","level":"info","event":"\u001b[0m01:55:42  Registered adapter: trino=1.9.3","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:42.778429Z","level":"info","event":"\u001b[0m01:55:42  Found 8 models, 5 seeds, 5 data tests, 456 macros","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:42.780369Z","level":"info","event":"\u001b[0m01:55:42","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:42.780557Z","level":"info","event":"\u001b[0m01:55:42  Concurrency: 1 threads (target='trino_output')","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:42.780750Z","level":"info","event":"\u001b[0m01:55:42","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:42.806946Z","level":"info","event":"\u001b[0m01:55:42  [\u001b[33mWARNING\u001b[0m]: SSL certificate validation is disabled by default. It is legacy behavior which will be changed in future releases. It is strongly advised to enable `require_certificate_validation` flag or explicitly set `cert` configuration to `True` for security reasons. You may receive an error after that if your SSL setup is incorrect.","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:42.807059Z","level":"info","event":"You may opt into the new behavior sooner by setting `flags.require_certificate_validation` to `True` in `dbt_project.yml`.","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:42.807119Z","level":"info","event":"Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:44.271220Z","level":"info","event":"\u001b[0m01:55:44  1 of 8 START sql table model staging.stg_product_categories .................... [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:45.197497Z","level":"info","event":"\u001b[0m01:55:45  1 of 8 ERROR creating sql table model staging.stg_product_categories ........... [\u001b[31mERROR\u001b[0m in 0.92s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:45.199169Z","level":"info","event":"\u001b[0m01:55:45  2 of 8 START sql table model staging.stg_product_subcategories ................. [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:45.764338Z","level":"info","event":"\u001b[0m01:55:45  2 of 8 OK created sql table model staging.stg_product_subcategories ............ [\u001b[32mCREATE TABLE (37 rows)\u001b[0m in 0.56s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:45.796907Z","level":"info","event":"\u001b[0m01:55:45  3 of 8 START sql table model staging.stg_products .............................. [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:46.270093Z","level":"info","event":"\u001b[0m01:55:46  3 of 8 ERROR creating sql table model staging.stg_products ..................... [\u001b[31mERROR\u001b[0m in 0.50s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:46.270904Z","level":"info","event":"\u001b[0m01:55:46  4 of 8 START sql table model staging.stg_sales ................................. [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:47.226742Z","level":"info","event":"\u001b[0m01:55:47  4 of 8 ERROR creating sql table model staging.stg_sales ........................ [\u001b[31mERROR\u001b[0m in 0.95s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:47.228440Z","level":"info","event":"\u001b[0m01:55:47  5 of 8 START sql table model staging.stg_territories ........................... [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:47.792442Z","level":"info","event":"\u001b[0m01:55:47  5 of 8 OK created sql table model staging.stg_territories ...................... [\u001b[32mCREATE TABLE (10 rows)\u001b[0m in 0.56s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:47.793376Z","level":"info","event":"\u001b[0m01:55:47  6 of 8 SKIP relation curated.dim_product ....................................... [\u001b[33mSKIP\u001b[0m]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:47.795372Z","level":"info","event":"\u001b[0m01:55:47  7 of 8 START sql table model curated.dim_country ............................... [RUN]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.736601Z","level":"info","event":"\u001b[0m01:55:48  7 of 8 OK created sql table model curated.dim_country .......................... [\u001b[32mCREATE TABLE (6 rows)\u001b[0m in 0.94s]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.738319Z","level":"info","event":"\u001b[0m01:55:48  8 of 8 SKIP relation curated.fact_sale ......................................... [\u001b[33mSKIP\u001b[0m]","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.743453Z","level":"info","event":"\u001b[0m01:55:48","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.743578Z","level":"info","event":"\u001b[0m01:55:48  Finished running 8 table models in 0 hours 0 minutes and 5.96 seconds (5.96s).","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.798322Z","level":"info","event":"\u001b[0m01:55:48","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.799234Z","level":"info","event":"\u001b[0m01:55:48  \u001b[31mCompleted with 3 errors, 0 partial successes, and 0 warnings:\u001b[0m","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.799626Z","level":"info","event":"\u001b[0m01:55:48","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.800051Z","level":"info","event":"\u001b[0m01:55:48  \u001b[31mFailure in model stg_product_categories (models/staging/stg_product_categories.sql)\u001b[0m","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.800449Z","level":"info","event":"\u001b[0m01:55:48    Database Error in model stg_product_categories (models/staging/stg_product_categories.sql)","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.800488Z","level":"info","event":"  TrinoQueryError(type=INTERNAL_ERROR, name=GENERIC_INTERNAL_ERROR, message=\"Bad Request (HTTP/400): New value to update existing key 'staging.stg_product_categories' has no content ID\", query_id=20251114_015544_00039_xfgec)","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.800554Z","level":"info","event":"  compiled code at target/run/my_dbt_trino/models/staging/stg_product_categories.sql","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.800797Z","level":"info","event":"\u001b[0m01:55:48","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.801052Z","level":"info","event":"\u001b[0m01:55:48    compiled code at target/compiled/my_dbt_trino/models/staging/stg_product_categories.sql","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.801305Z","level":"info","event":"\u001b[0m01:55:48","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.801881Z","level":"info","event":"\u001b[0m01:55:48  \u001b[31mFailure in model stg_products (models/staging/stg_products.sql)\u001b[0m","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.802350Z","level":"info","event":"\u001b[0m01:55:48    Database Error in model stg_products (models/staging/stg_products.sql)","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.802419Z","level":"info","event":"  TrinoQueryError(type=INTERNAL_ERROR, name=GENERIC_INTERNAL_ERROR, message=\"Bad Request (HTTP/400): New value to update existing key 'staging.stg_products' has no content ID\", query_id=20251114_015545_00043_xfgec)","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.802492Z","level":"info","event":"  compiled code at target/run/my_dbt_trino/models/staging/stg_products.sql","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.802764Z","level":"info","event":"\u001b[0m01:55:48","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.803214Z","level":"info","event":"\u001b[0m01:55:48    compiled code at target/compiled/my_dbt_trino/models/staging/stg_products.sql","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.803950Z","level":"info","event":"\u001b[0m01:55:48","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.804251Z","level":"info","event":"\u001b[0m01:55:48  \u001b[31mFailure in model stg_sales (models/staging/stg_sales.sql)\u001b[0m","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.804583Z","level":"info","event":"\u001b[0m01:55:48    Database Error in model stg_sales (models/staging/stg_sales.sql)","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.804620Z","level":"info","event":"  TrinoExternalError(type=EXTERNAL, name=ICEBERG_COMMIT_ERROR, message=\"Failed to commit the transaction during insert: Cannot commit: ref hash is out of date. Update the ref 'main' and try again\", query_id=20251114_015546_00045_xfgec)","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.804694Z","level":"info","event":"  compiled code at target/run/my_dbt_trino/models/staging/stg_sales.sql","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.804924Z","level":"info","event":"\u001b[0m01:55:48","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.805167Z","level":"info","event":"\u001b[0m01:55:48    compiled code at target/compiled/my_dbt_trino/models/staging/stg_sales.sql","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.805406Z","level":"info","event":"\u001b[0m01:55:48","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:48.805757Z","level":"info","event":"\u001b[0m01:55:48  Done. PASS=3 WARN=0 ERROR=3 SKIP=2 NO-OP=0 TOTAL=8","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:50.552264Z","level":"info","event":"dbt command executed successfully.","logger":"airflow.task.operators.custom_operator.dbt_operator.DbtCoreOperator","filename":"dbt_operator.py","lineno":51}
+{"timestamp":"2025-11-14T01:55:50.563283Z","level":"info","event":"stg_product_categories: error","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:50.563454Z","level":"info","event":"stg_product_subcategories: success","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:50.563493Z","level":"info","event":"stg_products: error","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:50.563521Z","level":"info","event":"stg_sales: error","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:50.563598Z","level":"info","event":"stg_territories: success","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:50.563625Z","level":"info","event":"dim_product: skipped","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:50.563651Z","level":"info","event":"dim_country: success","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:50.563677Z","level":"info","event":"fact_sale: skipped","logger":"task.stdout"}
+{"timestamp":"2025-11-14T01:55:50.641989Z","level":"error","event":"/usr/python/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 2 leaked semaphore objects to clean up at shutdown","logger":"task.stderr"}
+{"timestamp":"2025-11-14T01:55:50.642192Z","level":"error","event":"  warnings.warn('resource_tracker: There appear to be %d '","logger":"task.stderr"}
